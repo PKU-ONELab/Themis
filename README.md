@@ -25,7 +25,7 @@ We believe that an ideal evaluator should be convenient to use and possess these
 
 We implement experiments on several common NLG evaluation tasks and datasets to compare our Themis with other methods, including SummEval for summarization, Topical-Chat for dialogue response generation, SFRES&SFHOT for data-to-text, QAGS for factuality, MANS for story generation, and WMT23 zh-en for machine translation. Experimental results show that our Themis achieves better overall evaluation performance over other evaluation models, including GPT-4.
 
-| Method               | SummEval  | Topical-Chat | SFHOT&SFRES |   QAGS   |   MANS   |   WMT23   | Average $\rho$ |
+| Method               | SummEval  | Topical-Chat | SFHOT& SFRES |  QAGS  |  MANS  |  WMT23  | Average $\rho$ |
 | -------------------- | :-------: | :----------: | :---------: | :-------: | :-------: | :-------: | :------------: |
 | BLEU                 |   0.075   |    0.388     |    0.024    |     -     |   0.032   |   0.021   |       -        |
 | ROUGE                |   0.152   |    0.412     |    0.101    |     -     |  -0.002   |   0.151   |       -        |
