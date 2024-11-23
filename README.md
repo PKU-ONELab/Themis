@@ -1,6 +1,6 @@
-# Themis: Towards Flexible and Interpretable NLG Evaluation
+# Themis: A Reference-free NLG Evaluation Language Model with Flexibility and Interpretability
 
-This is the official repository for the paper [Themis: Towards Flexible and Interpretable NLG Evaluation](https://arxiv.org/abs/2406.18365).
+This is the official repository for our EMNLP 2024 paper [Themis: A Reference-free NLG Evaluation Language Model with Flexibility and Interpretability](https://aclanthology.org/2024.emnlp-main.891.pdf).
 
 ## Introduction
 
@@ -84,7 +84,7 @@ Our evaluation based on Themis can be directly performed with `eval.py`, and the
 
 We support the evaluation of multiple datasets at once, the specification of the temperature and the sampling number for the evaluation, as well as the calculation of the correlation coefficient between the evaluation results and human scores.
 
-In the default settings, you need to specify the paths to the model and evaluation data, and the directory where the output evaluation results will be saved. More hyperparameters for vllm can be modified in `eval.py`. By default, the temperature is set to 0, and the sampling number is set to 1, for obtaining deterministic results. Significantly, due to the implementation of vllm, even if the temperature is set to 0, using different inference settings such as GPU numbers and max_num_seqs will still result in different results.
+In addition, you need to specify the paths to the model and evaluation data, and the directory where the output evaluation results will be saved. More hyperparameters for vllm can be modified in `eval.py`. By default, the temperature is set to 0, and the sampling number is set to 1. Significantly, due to the implementation of vllm, even if the temperature is set to 0, using different inference settings such as GPU numbers and max_num_seqs will still result in different results.
 
 ```
 CUDA_VISIBLE_DEVICES=<GPU_ids> python eval.py \
@@ -127,10 +127,11 @@ CUDA_VISIBLE_DEVICES=<GPU_ids> python eval.py \
 ## Citation
 
 ```
-@article{hu2024themis,
-  title={Themis: Towards Flexible and Interpretable NLG Evaluation},
+@inproceedings{hu2024themis,
+  title={Themis: A Reference-free NLG Evaluation Language Model with Flexibility and Interpretability},
   author={Hu, Xinyu and Lin, Li and Gao, Mingqi and Yin, Xunjian and Wan, Xiaojun},
-  journal={arXiv preprint arXiv:2406.18365},
+  booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+  pages={15924--15951},
   year={2024}
 }
 ```
