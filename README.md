@@ -2,6 +2,10 @@
 
 This is the official repository for our EMNLP 2024 paper [Themis: A Reference-free NLG Evaluation Language Model with Flexibility and Interpretability](https://aclanthology.org/2024.emnlp-main.891.pdf).
 
+## Updates
+
+- **[2025/2/22]** Our large-scale NLG evaluation corpus, [**NLG-Eval**](https://huggingface.co/datasets/PKU-ONELab/NLG-Eval), has been released.
+
 ## Introduction
 
 We propose **Themis**, an 8B-parameter large language model (LLM) specifically designed and trained for NLG evaluation with more comprehensive capabilities. 
@@ -59,7 +63,7 @@ pip install vllm
 
 ### Model
 
-Our Themis is now available on huggingface hub: [🤗 Themis](https://huggingface.co/PKU-ONELab/Themis)
+Our model is now available on huggingface hub: [🤗**Themis**](https://huggingface.co/PKU-ONELab/Themis)
 
 ### Data Format
 
